@@ -1,0 +1,35 @@
+.background-container {
+    position: relative;
+    /* Permite posicionar el overlay */
+
+    height: 800px;
+    /* Altura del contenedor */
+
+    background-image: url('/assets/images/backgroudMedicina.webp');
+    /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+}
+
+.overlay {
+    position: absolute;
+    /* Permite superponer el texto */
+    top: 50%;
+    /* Mueve el texto al centro verticalmente */
+    left: 50%;
+    /* Mueve el texto al centro horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta el texto al centro */
+    color: white;
+    /* Color del texto */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 10px;
+    /* Bordes redondeados opcional */
+}
