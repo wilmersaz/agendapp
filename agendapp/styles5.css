@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+#app {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.cita {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cita:last-child {
+    border-bottom: none;
+}
+
+.cita h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #0056b3;
+}
+
+.cita p {
+    margin: 5px 0;
+    color: #555;
+}
