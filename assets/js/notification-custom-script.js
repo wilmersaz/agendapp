@@ -47,7 +47,8 @@
             continueDelayOnInactiveTab: false,
 		    position: 'top right',
 		    icon: 'fa fa-check-circle',
-		    msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
+			title: 'Registro exitoso',
+		    msg: 'Cita médica registrada exitosamente'
 		    });
 		  }		 
 
