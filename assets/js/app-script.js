@@ -51,5 +51,19 @@ $(function () {
 })
 
 
+$('#default-datepicker').datepicker({
+    todayHighlight: true
+  });
+  $('#autoclose-datepicker').datepicker({
+    autoclose: true,
+    todayHighlight: true
+  });
+
+  $('#inline-datepicker').datepicker({
+     todayHighlight: true
+  });
+
+  $('#dateragne-picker .input-daterange').datepicker({
+   });
 
 });
