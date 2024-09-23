@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,21 +29,33 @@
 					</div>
 					<div class="card-title text-uppercase text-center py-3">Ingresar</div>
 					<form>
+						<!-- Lista de opciones para el tipo de documento -->
 						<div class="form-group">
 							<div class="position-relative has-icon-right">
-								<label for="exampleInputUsername" class="sr-only">Usuario</label>
+								<label for="exampleInputUsername" class="sr-only"></label>
+								<select class="form-control form-control-rounded" id="basic-select">
+									<option>Cédula de ciudadanía</option>
+									<option>Cédula de extranjería</option>
+								</select>
+							</div>
+						</div>
+						<!-- Campo para el número del documento -->
+						<div class="form-group">
+							<div class="position-relative has-icon-right">
+								<label for="exampleInputUsername" class="sr-only">Número de documento</label>
 								<input type="text" id="exampleInputUsername" class="form-control form-control-rounded"
-									placeholder="Username">
+									placeholder="Número de documento">
 								<div class="form-control-position">
 									<i class="icon-user"></i>
 								</div>
 							</div>
 						</div>
+						<!-- Campos para la contraseña -->
 						<div class="form-group">
 							<div class="position-relative has-icon-right">
 								<label for="exampleInputPassword" class="sr-only">Contraseña</label>
 								<input type="password" id="exampleInputPassword"
-									class="form-control form-control-rounded" placeholder="Password">
+									class="form-control form-control-rounded" placeholder="Contraseña">
 								<div class="form-control-position">
 									<i class="icon-lock"></i>
 								</div>
@@ -60,9 +73,13 @@
 								<a href="reset-password.html">Restablecer Contraseña</a>
 							</div>
 						</div>
+						<!-- Boton para el ingreso a la aplicación -->
 						<a href="../app/welcome.html"
-							class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Ingresar</a>
+						class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Ingresar</a>
 						<div class="text-center pt-3">
+							<!-- Opción para el registro del usuario -->
+							<p class="text-muted">¿Aun no tiene un usuario? <a href="signup.html">
+									Registrese</a></p>
 						</div>
 					</form>
 				</div>
@@ -74,4 +91,5 @@
 	<script src="../assets/js/popper.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
