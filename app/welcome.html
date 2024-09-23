@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bienvenid@</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link href="../assets/css/simplebar.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
+    <link href="../assets/css/app-style.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/lobibox.min.css"/>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Bienvenid@</title>
-  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-  <link href="../assets/css/simplebar.css" rel="stylesheet" />
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
-  <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
-  <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
-  <link href="../assets/css/app-style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-      <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-        <div class="brand-logo">
-          <a href="../app/welcome.html">
-            <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon" />
-          </a>
-          <h5 class="logo-text">AgendApp</h5>
+  <body>
+    <div id="wrapper">
+      <div
+        id="sidebar-wrapper"
+        data-simplebar=""
+        data-simplebar-auto-hide="true"
+      >
+        <div
+          id="sidebar-wrapper"
+          data-simplebar=""
+          data-simplebar-auto-hide="true"
+        >
+          <div class="brand-logo">
+            <a href="../app/welcome.html">
+              <img
+                src="../assets/images/logo-icon.png"
+                class="logo-icon"
+                alt="logo icon"
+              />
+            </a>
+            <h5 class="logo-text">AgendApp</h5>
+          </div>
+          <ul class="sidebar-menu do-nicescrol">
+            <li class="sidebar-header">Menu</li>
+            <li>
+              <a href="../app/history.html" class="waves-effect">
+                <i class="icon-map"></i> <span>Historial De Citas</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="waves-effect waves-light" data-toggle="modal" data-target="#modal-animation-1">
+                <i class="icon-calendar"></i> <span>Solicitar Cita</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <ul class="sidebar-menu do-nicescrol">
           <li class="sidebar-header">Menu</li>
@@ -124,6 +154,7 @@
     </footer>
   </div>
 
+<<<<<<< HEAD
   <script src="../assets/js/jquery.min.js"></script>
   <script src="../assets/js/popper.min.js"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
@@ -134,3 +165,83 @@
 </body>
 
 </html>
+=======
+    <!-- Modals -->
+    <div class="modal fade" id="modal-animation-1">
+      <div class="modal-dialog">
+        <div class="modal-content animated flipInX">
+          <div class="modal-header">
+            <h5 class="modal-title"><i class="fa fa-star"></i> Solicitar Cita</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label>Especialidad</label>
+                      <select class="form-control single-select">
+                          <option value="" readonly selected disabled>Seleccione...</option>
+                          <option>Medicina General</option>
+                          <option>Odontología</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label>Médico</label>
+                      <select class="form-control single-select">
+                          <option value="" readonly selected disabled>Seleccione...</option>
+                          <option>Shirley Gonzalez</option>
+                          <option>Jhon Murillo</option>
+                          <option>Laura Morales</option>
+                          <option>Diego Ladino</option>
+                          <option>Wilmer Sanchez</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="inline-datepicker"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              <i class="fa fa-times"></i> Cerrar
+            </button>
+            <button type="button" class="btn btn-primary" onclick="success_noti()" data-dismiss="modal">
+              <i class="fa fa-check-square-o"></i> Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
+    <script src="../assets/js/waves.js"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <script src="../assets/js/app-script.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/lobibox.min.js"></script>
+    <script src="../assets/js/notifications.min.js"></script>
+    <script src="../assets/js/notification-custom-script.js"></script>
+  </body>
+</html>
+>>>>>>> 13972fdec6e8d42690d1271d3b373431ab89da8c
