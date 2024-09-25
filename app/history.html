@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Bienvenid@</title>
-  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-  <link href="../assets/css/simplebar.css" rel="stylesheet" />
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
-  <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
-  <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
-  <link href="../assets/css/app-style.css" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Historial de Citas</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link href="../assets/css/simplebar.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
+    <link href="../assets/css/app-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/history.css" />
     <link href="../assets/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../assets/css/lobibox.min.css"/>
-</head>
+  </head>
 
-<body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-      <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-        <div class="brand-logo">
-          <a href="../app/welcome.html">
+  <body>
+    <div id="wrapper">
+      <div
+        id="sidebar-wrapper"
+        data-simplebar=""
+        data-simplebar-auto-hide="true"
+      >
+        <div
+          id="sidebar-wrapper"
+          data-simplebar=""
+          data-simplebar-auto-hide="true"
+        >
+          <div class="brand-logo">
+            <a href="../app/welcome.html">
               <img
                 src="../assets/images/logo-icon.png"
                 class="logo-icon"
                 alt="logo icon"
               />
-          </a>
-          <h5 class="logo-text">AgendApp</h5>
+            </a>
+            <h5 class="logo-text">AgendApp</h5>
           </div>
           <ul class="sidebar-menu do-nicescrol">
             <li class="sidebar-header">Menu</li>
@@ -57,31 +65,20 @@
               </a>
             </li>
           </ul>
-
+  
           <ul class="navbar-nav align-items-center right-nav-link">
             <li class="nav-item">
-              <a
-                class="nav-link dropdown-toggle dropdown-toggle-nocaret"
-                data-toggle="dropdown"
-                href="#"
-              >
-                <span class="user-profile"
-                  ><img
-                    src="../assets/images/avatars/avatar-18.png"
-                    class="img-circle"
-                    alt="user avatar"
-                /></span>
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+                <span class="user-profile"><img src="../assets/images/avatars/avatar-18.png" class="img-circle"
+                    alt="user avatar" /></span>
               </a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li class="dropdown-item user-details">
                   <a href="javaScript:void();">
                     <div class="media">
                       <div class="avatar">
-                        <img
-                          class="align-self-start mr-3"
-                          src="../assets/images/avatars/avatar-18.png"
-                          alt="user avatar"
-                        />
+                        <img class="align-self-start mr-3" src="../assets/images/avatars/avatar-18.png"
+                          alt="user avatar" />
                       </div>
                       <div class="media-body">
                         <h6 class="mt-2 user-title">Wilmer Sanchez</h6>
@@ -113,24 +110,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="card">
-                <img
-                  class="rounded"
-                  src="../assets/images/backgroudMedicina.webp"
-                  alt="Card image overlay"
-                />
-                <div class="card-img-overlay overlay-dark rounded">
-                  <h1 class="card-title text-white">Bienvenid@</h1>
-                  <p class="card-text text-white display-4">
-                    Contamos con los mejores especialistas
-                  </p>
-                  <p class="card-text text-white h4">
-                    En medicina general y odontología, nuestro equipo está
-                    dedicado a ofrecerte la mejor atención. Nos enorgullece
-                    contar con profesionales altamente capacitados y con
-                    experiencia en el cuidado de la salud. ¡Tu bienestar es
-                    nuestra prioridad!.
-                  </p>
-                </div>
+                <div id="historialCitas"></div>
               </div>
             </div>
           </div>
@@ -145,7 +125,7 @@
         </div>
       </footer>
     </div>
-  
+
     <!-- Modals -->
     <div class="modal fade" id="modal-animation-1">
       <div class="modal-dialog">
@@ -218,6 +198,7 @@
     <script src="../assets/js/waves.js"></script>
     <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/app-script.js"></script>
+    <script src="../assets/js/history.js"></script>
     <script src="../assets/js/bootstrap-datepicker.min.js"></script>
     <script src="../assets/js/lobibox.min.js"></script>
     <script src="../assets/js/notifications.min.js"></script>

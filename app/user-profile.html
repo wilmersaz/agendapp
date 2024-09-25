@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Mis datos</title>
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+  <link href="../assets/css/simplebar.css" rel="stylesheet" />
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
+  <link href="../assets/css/app-style.css" rel="stylesheet" />
+  <link href="../assets/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../assets/css/lobibox.min.css"/>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+      <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+        <div class="brand-logo">
+          <a href="../app/welcome.html">
+            <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon" />
+          </a>
+          <h5 class="logo-text">AgendApp</h5>
+        </div>
+        <ul class="sidebar-menu do-nicescrol">
+          <li class="sidebar-header">Menu</li>
+          <li>
+            <a href="../app/history.html" class="waves-effect">
+              <i class="icon-map"></i> <span>Historial De Citas</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="waves-effect waves-light" data-toggle="modal" data-target="#modal-animation-1">
+              <i class="icon-calendar"></i> <span>Solicitar Cita</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="topbar-nav">
+      <nav class="navbar navbar-expand fixed-top bg-white">
+        <ul class="navbar-nav mr-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link toggle-menu" href="javascript:void();">
+              <i class="icon-menu menu-icon"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav align-items-center right-nav-link">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+              <span class="user-profile"><img src="../assets/images/avatars/avatar-18.png" class="img-circle"
+                  alt="user avatar" /></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item user-details">
+                <a href="javaScript:void();">
+                  <div class="media">
+                    <div class="avatar">
+                      <img class="align-self-start mr-3" src="../assets/images/avatars/avatar-18.png"
+                        alt="user avatar" />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="mt-2 user-title">Wilmer Sanchez</h6>
+                      <p class="user-subtitle">walsanchez@poligran.edu.co</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <a href="../app/user-profile.html">
+                <li class="dropdown-item">
+                  <i class="icon-user mr-2"></i> Mis datos
+                </li>
+              </a>
+              <li class="dropdown-divider"></li>
+              <a href="../index.html">
+                <li class="dropdown-item">
+                  <i class="icon-power mr-2"></i> Cerrar Sesión
+                </li>
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="tab-content p-3">
+                  <div class="tab-pane active" id="edit">
+                    <form>
+                      <h1 class="card-title">MIS DATOS PERSONALES</h1>
+                      <div class="row">
+                        <!-- Columna de los campos del formulario -->
+                        <div class="col-md-9">
+                          <!-- Campo para el tipo de documento -->
+                          <div class="form-group">
+                            <select class="form-control" id="basic-select">
+                              <option>Cédula de ciudadanía</option>
+                              <option>Cédula de extranjería</option>
+                            </select>
+                          </div>
+
+                          <!-- Campo para el número del documento -->
+                          <div class="form-group">
+                            <input type="number" class="form-control" placeholder="44789652" disabled>
+                          </div>
+
+                          <!-- Campo para los nombres -->
+                          <div class="row">
+                            <div class="form-group col-md-6">
+                              <input type="text" class="form-control" placeholder="Wilmer" disabled>
+                            </div>
+
+                            <!-- Campo para los apellidos -->
+                            <div class="form-group col-md-6">
+                              <input type="text" class="form-control" placeholder="Sanchez" disabled>
+                            </div>
+                          </div>
+
+                          <!-- Campo para el correo electrónico -->
+                          <div class="form-group">
+                            <input type="email" class="form-control" placeholder="walsanchez@poligran.edu.co">
+                            <div class="form-control-position">
+                              <i class="icon-envelope-open"></i>
+                            </div>
+                          </div>
+
+                          <!-- Campo para el teléfono -->
+                          <div class="form-group">
+                            <input type="number" class="form-control" placeholder="300-418-15-22">
+                            <div class="form-control-position">
+                              <i class="icon-phone"></i>
+                            </div>
+                          </div>
+
+                          <!-- Campo para la contraseña -->
+                          <div class="row">
+                            <div class="form-group col-md-6">
+                              <input type="password" class="form-control" placeholder="Contraseña">
+                              <div class="form-control-position">
+                                <i class="icon-lock"></i>
+                              </div>
+                            </div>
+
+                            <!-- Campo para confirmar la contraseña -->
+                            <div class="form-group col-md-6">
+                              <input type="password" class="form-control" placeholder="Confirmación de contraseña">
+                              <div class="form-control-position">
+                                <i class="icon-lock"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Columna para la imagen de perfil -->
+                        <div class="col-md-3 text-right">
+                          <div class="user-fullimage">
+                            <img src="../assets/images/avatars/avatar-18.png" alt="user avatar" class="card-img-top"
+                              style="max-width: 100%; height: auto;">
+                            <div class="details">
+                              <h5 class="mb-1 text-white">Mark Jhonsan</h5>
+                              <h6 class="text-white">Senior Designer</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group col-md-9">
+                          <a href="../app/welcome.html"
+                            class="btn btn-primary shadow-primary btn-block waves-effect waves-light">MODIFICAR DATOS</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2024
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal fade" id="modal-animation-1">
+    <div class="modal-dialog">
+      <div class="modal-content animated flipInX">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fa fa-star"></i> Solicitar Cita</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Especialidad</label>
+                    <select class="form-control single-select">
+                        <option value="" readonly selected disabled>Seleccione...</option>
+                        <option>Medicina General</option>
+                        <option>Odontología</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Médico</label>
+                    <select class="form-control single-select">
+                        <option value="" readonly selected disabled>Seleccione...</option>
+                        <option>Shirley Gonzalez</option>
+                        <option>Jhon Murillo</option>
+                        <option>Laura Morales</option>
+                        <option>Diego Ladino</option>
+                        <option>Wilmer Sanchez</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="inline-datepicker"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >
+            <i class="fa fa-times"></i> Cerrar
+          </button>
+          <button type="button" class="btn btn-primary" onclick="success_noti()" data-dismiss="modal">
+            <i class="fa fa-check-square-o"></i> Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/simplebar.js"></script>
+  <script src="../assets/js/waves.js"></script>
+  <script src="../assets/js/sidebar-menu.js"></script>
+  <script src="../assets/js/app-script.js"></script>
+  <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+  <script src="../assets/js/lobibox.min.js"></script>
+  <script src="../assets/js/notifications.min.js"></script>
+  <script src="../assets/js/notification-custom-script.js"></script>
+</body>
+
+</html>
