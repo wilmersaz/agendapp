@@ -19,5 +19,6 @@ function loadTemplate(url, elementId) {
 }
 
 // Cargar plantillas iniciales
-loadTemplate('/app/common/menu_topbar.html', 'header');
+loadTemplate('/app/common/header.html', 'header');
+loadTemplate('/app/common/sidebar.html', 'sidebar');
 loadTemplate('/app/common/footer.html', 'footer');
