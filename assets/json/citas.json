@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "fecha": "01-10-2024",
+        "hora": "08:30:00",
+        "especialidad": "Medicina General",
+        "Medico": "Alberto Zuñiga",
+        "estado": "Activa",
+        "usuario_id": "1"
+    },
+    {
+        "id": "2",
+        "fecha": "05-10-2024",
+        "hora": "12:15:00",
+        "especialidad": "Odontología",
+        "Medico": "Agelica Maldonado",
+        "estado": "Activa",
+        "usuario_id": "2"
+    },
+    {
+        "id": "3",
+        "fecha": "10-10-2024",
+        "hora": "17:45:00",
+        "especialidad": "Medicina General",
+        "Medico": "Juliana Franco",
+        "estado": "Activa",
+        "usuario_id": "3"
+    }
+]
