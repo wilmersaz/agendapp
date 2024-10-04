@@ -19,6 +19,6 @@ function loadTemplate(url, elementId) {
 }
 
 // Cargar plantillas iniciales
-loadTemplate('/app/common/header.html', 'header');
-loadTemplate('/app/common/sidebar.html', 'sidebar');
-loadTemplate('/app/common/footer.html', 'footer');
+loadTemplate('/agendapp/app/common/header.html', 'header');
+loadTemplate('/agendapp/app/common/sidebar.html', 'sidebar');
+loadTemplate('/agendapp/app/common/footer.html', 'footer');
