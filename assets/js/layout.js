@@ -18,7 +18,13 @@ function loadTemplate(url, elementId) {
     });
 }
 
-// Cargar plantillas iniciales
-loadTemplate('/agendapp/app/common/header.html', 'header');
-loadTemplate('/agendapp/app/common/sidebar.html', 'sidebar');
-loadTemplate('/agendapp/app/common/footer.html', 'footer');
+// Verificar si la URL contiene 'wilmerzas'
+const isWilmerzas = window.location.href.includes('wilmersaz');
+
+// Asignar las rutas dependiendo del resultado de la verificación
+const basePath = isWilmerzas ? '/agendapp/app/common/' : '/app/common/';
+
+// Cargar plantillas con la ruta correcta
+loadTemplate(`${basePath}header.html`, 'header');
+loadTemplate(`${basePath}sidebar.html`, 'sidebar');
+loadTemplate(`${basePath}footer.html`, 'footer');
