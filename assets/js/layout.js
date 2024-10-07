@@ -18,11 +18,11 @@ function loadTemplate(url, elementId) {
     });
 }
 
-// Verificar si la URL contiene 'wilmerzas'
-const isWilmerzas = window.location.href.includes('wilmersaz');
+// Verificar si la URL contiene 'wilmersaz'
+const isWilmersaz = window.location.href.includes('wilmersaz');
 
 // Asignar las rutas dependiendo del resultado de la verificación
-const basePath = isWilmerzas ? '/agendapp/app/common/' : '/app/common/';
+const basePath = isWilmersaz ? '/agendapp/app/common/' : '/app/common/';
 
 // Función principal para cargar las plantillas según el rol
 function loadPage() {
