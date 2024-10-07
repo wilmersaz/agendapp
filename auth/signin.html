@@ -13,7 +13,7 @@
 	<link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
 	<link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
 	<link href="../assets/css/app-style.css" rel="stylesheet" />
-
+	<link href="../assets/css/lobibox.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -33,9 +33,9 @@
 						<div class="form-group">
 							<div class="position-relative has-icon-right">
 								<label for="exampleInputUsername" class="sr-only"></label>
-								<select class="form-control form-control-rounded" id="basic-select">
-									<option>Cédula de ciudadanía</option>
-									<option>Cédula de extranjería</option>
+								<select class="form-control form-control-rounded" id="TipoDoc">
+									<option value="CC">Cédula de ciudadanía</option>
+									<option value="CE">Cédula de extranjería</option>
 								</select>
 							</div>
 						</div>
@@ -43,7 +43,7 @@
 						<div class="form-group">
 							<div class="position-relative has-icon-right">
 								<label for="exampleInputUsername" class="sr-only">Número de documento</label>
-								<input type="text" id="exampleInputUsername" class="form-control form-control-rounded"
+								<input type="text" id="NumeroDoc" class="form-control form-control-rounded"
 									placeholder="Número de documento">
 								<div class="form-control-position">
 									<i class="icon-user"></i>
@@ -54,7 +54,7 @@
 						<div class="form-group">
 							<div class="position-relative has-icon-right">
 								<label for="exampleInputPassword" class="sr-only">Contraseña</label>
-								<input type="password" id="exampleInputPassword"
+								<input type="password" id="Password"
 									class="form-control form-control-rounded" placeholder="Contraseña">
 								<div class="form-control-position">
 									<i class="icon-lock"></i>
@@ -69,13 +69,10 @@
 									<label for="user-checkbox">Recordarme</label>
 								</div>
 							</div>
-							<div class="form-group col-6 text-right">
-								<a href="reset-password.html">Restablecer Contraseña</a>
-							</div>
 						</div>
 						<!-- Boton para el ingreso a la aplicación -->
-						<a href="../app/welcome.html"
-						class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Ingresar</a>
+						<a href="javascript:void(0)" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light" onclick="validarYRedireccionar()">Ingresar</a>
+
 						<div class="text-center pt-3">
 							<!-- Opción para el registro del usuario -->
 							<p class="text-muted">¿Aun no tiene un usuario? <a href="signup.html">
@@ -90,6 +87,10 @@
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/popper.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/signin.js"></script>
+	<script src="../assets/js/lobibox.min.js"></script>
+	<script src="../assets/js/notifications.min.js"></script>
+	<script src="../assets/js/notification-custom-script.js"></script>
 </body>
 
 </html>

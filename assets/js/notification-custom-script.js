@@ -54,6 +54,16 @@
 
 
 
+		  function error_notication(message){
+			Lobibox.notify('error', {
+		    pauseDelayOnHover: true,
+            continueDelayOnInactiveTab: false,
+		    position: 'top right',
+		    icon: 'fa fa-times-circle',
+		    msg: message,
+			sound: false
+		    });
+		  }	
 
 /* Rounded corners Notifications */
 
