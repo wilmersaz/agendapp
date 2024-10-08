@@ -2,6 +2,7 @@
     {
         "id": 1,
         "nombre": "Shirley Tathyana González",
+        "tipodoc": "CC",
         "identificacion": "52304733",
         "password": "52304733",
         "telefono": "3002425218",
@@ -12,6 +13,7 @@
     {
         "id": 2,
         "nombre": "Jhon Alejandro Murillo",
+        "tipodoc": "CC",
         "identificacion": "1233693003",
         "password": "1233693003",
         "telefono": "3103068483",
@@ -22,16 +24,18 @@
     {
         "id": 3,
         "nombre": "Laura Morales",
+        "tipodoc": "CC",
         "identificacion": "1037667455",
         "password": "1037667455",
         "telefono": "3002375244",
         "correo": "ldanmorales@poligran.edu.co",
-        "estado": "Activo",
+        "estado": "Inactivo",
         "rol": "usuario"
     },
     {
         "id": 4,
         "nombre": "Diego Ladino",
+        "tipodoc": "CC",
         "identificacion": "1097395030",
         "password": "1097395030",
         "telefono": "3045440896",
@@ -42,6 +46,7 @@
     {
         "id": 5,
         "nombre": "Wilmer Alonso Sanchez Saez",
+        "tipodoc": "CC",
         "identificacion": "1020751370",
         "password": "1020751370",
         "telefono": "3006934822",
@@ -52,6 +57,7 @@
     {
         "id": 6,
         "nombre": "administrador",
+        "tipodoc": "CC",
         "identificacion": "123456789",
         "password": "123456789",
         "telefono": "3003333333",

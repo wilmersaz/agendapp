@@ -13,6 +13,7 @@
 	<link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
 	<link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
 	<link href="../assets/css/app-style.css" rel="stylesheet" />
+	<link href="../assets/css/lobibox.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -31,9 +32,9 @@
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputUsername" class="sr-only"></label>
-									<select class="form-control form-control-rounded" id="basic-select">
-										<option>Cédula de ciudadanía</option>
-										<option>Cédula de extranjería</option>
+									<select class="form-control form-control-rounded" id="TipoDoc">
+										<option value="CC">Cédula de ciudadanía</option>
+										<option value="CE">Cédula de extranjería</option>
 									</select>
 								</div>
 							</div>
@@ -41,8 +42,8 @@
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputUsername" class="sr-only"></label>
-									<input type="number" id="exampleInputUsername"
-										class="form-control form-control-rounded" placeholder="Número de documento">
+									<input type="number" id="NumeroDoc" class="form-control form-control-rounded"
+										placeholder="Número de documento">
 								</div>
 							</div>
 						</div>
@@ -51,16 +52,16 @@
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputEmailId" class="sr-only"></label>
-									<input type="text" id="exampleInputEmailId"
-										class="form-control form-control-rounded" placeholder="Nombres">
+									<input type="text" id="Nombres" class="form-control form-control-rounded"
+										placeholder="Nombres">
 								</div>
 							</div>
 							<!-- Campo para los apellidos  -->
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputEmailId" class="sr-only"></label>
-									<input type="text" id="exampleInputEmailId"
-										class="form-control form-control-rounded" placeholder="Apellidos">
+									<input type="text" id="Apellidos" class="form-control form-control-rounded"
+										placeholder="Apellidos">
 								</div>
 							</div>
 						</div>
@@ -68,7 +69,7 @@
 						<div class="form-group">
 							<div class="position-relative has-icon-right">
 								<label for="exampleInputUsername" class="sr-only"></label>
-								<input type="email" id="exampleInputUsername" class="form-control form-control-rounded"
+								<input type="email" id="email" class="form-control form-control-rounded"
 									placeholder="Correo electrónico">
 								<div class="form-control-position">
 									<i class="icon-envelope-open"></i>
@@ -80,8 +81,8 @@
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputPassword" class="sr-only"></label>
-									<input type="number" id="exampleInputPassword"
-										class="form-control form-control-rounded" placeholder="Teléfono">
+									<input type="number" id="telefono" class="form-control form-control-rounded"
+										placeholder="Teléfono">
 									<div class="form-control-position">
 										<i class="icon-phone"></i>
 									</div>
@@ -93,7 +94,7 @@
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputRetryPassword" class="sr-only"></label>
-									<input type="password" id="exampleInputRetryPassword"
+									<input type="password" id="password"
 										class="form-control form-control-rounded" placeholder="Contraseña">
 									<div class="form-control-position">
 										<i class="icon-lock"></i>
@@ -104,7 +105,7 @@
 							<div class="form-group col-md-6">
 								<div class="position-relative has-icon-right">
 									<label for="exampleInputRetryPassword" class="sr-only"></label>
-									<input type="password" id="exampleInputRetryPassword"
+									<input type="password" id="passwordConfirm"
 										class="form-control form-control-rounded"
 										placeholder="confirmación de contraseña">
 									<div class="form-control-position">
@@ -112,8 +113,13 @@
 									</div>
 								</div>
 							</div>
-							<a href="../app/welcome.html"
+							<!-- <a href="../app/welcome.html"
 								class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Crear
+								usuario</a> -->
+							<!-- Boton para el ingreso a la aplicación -->
+							<a href="javascript:void(0)"
+								class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light"
+								onclick="ValidarRegistro()">Crear
 								usuario</a>
 					</form>
 				</div>
@@ -122,10 +128,14 @@
 
 		<a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
 	</div><!--wrapper-->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/signin.js"></script>
+	<script src="../assets/js/signup.js"></script>
+	<script src="../assets/js/lobibox.min.js"></script>
+	<script src="../assets/js/notifications.min.js"></script>
+	<script src="../assets/js/notification-custom-script.js"></script>
 </body>
 
 </html>
