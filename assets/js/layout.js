@@ -32,8 +32,10 @@ function loadPage() {
         loadTemplate(`${basePath}header.html`, 'header');
         loadTemplate(`${basePath}footer.html`, 'footer');
 
+        const sesion = JSON.parse(sessionStorage.getItem('sesion'));
+        
         // Verificar el rol del usuario
-        if (user.rol === 'Administrador') {
+        if (sesion.rol === 'Administrador') {
             // Cargar sidebarAdmin si es Administrador
             loadTemplate(`${basePath}sidebarAdmin.html`, 'sidebar');
         } else {

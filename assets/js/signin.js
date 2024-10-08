@@ -80,6 +80,19 @@ function validarYRedireccionar() {
     if (usuarioValido) {
         const estado = validarEstado(identificacion)
         if (estado) {
+            const usr = usuarios.find(u => u.identificacion === identificacion);
+            const sesionActualizada = {
+                id: usr.id,
+                nombre: usr.nombre,
+                identificacion: usr.identificacion,
+                telefono: usr.telefono,
+                correo: usr.correo,
+                estado: usr.estado,
+                rol: usr.rol
+            };
+            // Guardar los datos en sessionStorage
+            sessionStorage.setItem('sesion', JSON.stringify(sesionActualizada));
+
             // Si es válido y usuario esta activo, redirigir a la página de bienvenida
             window.location.href = '../app/welcome.html';
         } else {
