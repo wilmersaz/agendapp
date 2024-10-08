@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Historial de Citas</title>
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+  <link href="../assets/css/simplebar.css" rel="stylesheet" />
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
+  <link href="../assets/css/app-style.css" rel="stylesheet" />
+  <link href="../assets/css/history.css" rel="stylesheet" />
+  <link href="../assets/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/lobibox.min.css" rel="stylesheet" />
+</head>
+
+<title>Filtro de Usuarios</title>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor centrado */
+    .checkbox-container {
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para usuarios activos/inactivos */
+    .active {
+        color: green;
+    }
+
+    .inactive {
+        color: red;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+</style>
+</head>
+<body>
+<h1>Lista de Usuarios</h1>
+
+<!-- Contenedor centrado para el checkbox -->
+<div class="checkbox-container">
+    <label>
+        <input type="checkbox" id="filter-active" checked> Mostrar solo usuarios activos
+    </label>
+</div>
+
+<!-- Tabla para mostrar los usuarios -->
+<table border="1" id="user-table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Aquí se rellenará la tabla con usuarios -->
+    </tbody>
+</table>
+
+    <script src="admin-user.js"></script>
+
+  <script src="../assets/js/readSesionJson.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/simplebar.js"></script>
+  <script src="../assets/js/waves.js"></script>
+  <script src="../assets/js/sidebar-menu.js"></script>
+  <script src="../assets/js/app-script.js"></script>
+  <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+  <script src="../assets/js/lobibox.min.js"></script>
+  <script src="../assets/js/notifications.min.js"></script>
+  <script src="../assets/js/notification-custom-script.js"></script>
+  <script src="../assets/js/history.js"></script>
+</body>
+
+</html>
