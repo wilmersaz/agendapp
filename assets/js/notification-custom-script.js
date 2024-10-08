@@ -50,7 +50,31 @@
 			title: 'Registro exitoso',
 		    msg: 'Cita médica registrada exitosamente'
 		    });
-		  }		 
+		  }	
+
+		  function warning_notificacion(message){
+			Lobibox.notify('warning', {
+		    pauseDelayOnHover: true,
+            continueDelayOnInactiveTab: false,
+		    position: 'top right',
+		    icon: 'fa fa-exclamation-circle',
+			title: 'Atención',
+			msg: message,
+			sound: false
+		  });
+		  }	
+		  
+		  function success_notificacion(message){
+			Lobibox.notify('success', {
+		    pauseDelayOnHover: true,
+            continueDelayOnInactiveTab: false,
+		    position: 'top right',
+		    icon: 'fa fa-check-circle',
+			title: 'Registro exitoso',
+			msg: message,
+			sound: false
+		    });
+		  }	
 
 
 
