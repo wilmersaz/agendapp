@@ -1,6 +1,11 @@
 // Función para leer el archivo sesion.json
 function readSessionFile() {
-    return fetch('/assets/json/sesion.json')
+    const isWilmerzas = window.location.href.includes('wilmersaz');
+
+// Asignar las rutas dependiendo del resultado de la verificación
+const basePath = isWilmerzas ? '/agendapp/assets/' : '//assets/';
+
+    return fetch(basePath + '/json/sesion.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al cargar el archivo sesion.json');
