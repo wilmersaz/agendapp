@@ -56,6 +56,17 @@
     },
     {
         "id": 6,
+        "nombre": "Maria Fernanda Rodriguez",
+        "tipodoc": "CC",
+        "identificacion": "1102456789",
+        "password": "1102456789",
+        "telefono": "3104567890",
+        "correo": "mfrodriguez@poligran.edu.co",
+        "estado": "Inactivo",
+        "rol": "usuario"
+    },
+    {
+        "id": 7,
         "nombre": "administrador",
         "tipodoc": "CC",
         "identificacion": "123456789",

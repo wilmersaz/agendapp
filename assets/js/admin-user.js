@@ -1,79 +1,29 @@
-// Simulación de usuarios con estado activo/inactivo
-const users = [
-  {
-    id: 1,
-    nombre: "Shirley Tathyana González",
-    identificacion: "52304733",
-    password: "52304733",
-    telefono: "3002425218",
-    correo: "stgonzalez@poligran.edu.co",
-    estado: "Activo",
-    rol: "usuario",
-  },
-  {
-    id: 2,
-    nombre: "Jhon Alejandro Murillo",
-    identificacion: "1233693003",
-    password: "1233693003",
-    telefono: "3103068483",
-    correo: "jalemurillo@poligran.edu.co",
-    estado: "Activo",
-    rol: "usuario",
-  },
-  {
-    id: 3,
-    nombre: "Laura Morales",
-    identificacion: "1037667455",
-    password: "1037667455",
-    telefono: "3002375244",
-    correo: "ldanmorales@poligran.edu.co",
-    estado: "Activo",
-    rol: "usuario",
-  },
-  {
-    id: 4,
-    nombre: "Diego Ladino",
-    identificacion: "1097395030",
-    password: "1097395030",
-    telefono: "3045440896",
-    correo: "daladino@poligran.edu.co",
-    estado: "Activo",
-    rol: "usuario",
-  },
-  {
-    id: 5,
-    nombre: "Wilmer Alonso Sanchez Saez",
-    identificacion: "1020751370",
-    password: "1020751370",
-    telefono: "3006934822",
-    correo: "walsanchez@poligran.edu.co",
-    estado: "Activo",
-    rol: "usuario",
-  },
-  {
-    id: 6,
-    nombre: "administrador",
-    identificacion: "123456789",
-    password: "123456789",
-    telefono: "3003333333",
-    correo: "admin@poligran.edu.com",
-    estado: "Activo",
-    rol: "Administrador",
-  },
-];
-
 // Elementos HTML
 const userTableBody = document.querySelector("#user-table tbody");
 const filterCheckbox = document.getElementById("filter-active");
 
+// Función para cargar usuarios desde usuarios.json
+async function loadUsers() {
+  try {
+    const response = await fetch('/assets/json/usuarios.json'); // Cambia la ruta si es necesario
+    if (!response.ok) {
+      throw new Error('Error al cargar el archivo JSON');
+    }
+    const users = await response.json();
+    renderUsers(users); // Llama a renderUsers con los usuarios cargados
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
 // Función para renderizar la tabla de usuarios
-function renderUsers() {
+function renderUsers(users) {
   // Limpiar tabla antes de volver a renderizar
   userTableBody.innerHTML = "";
 
   // Filtrar usuarios en función del checkbox
   const filteredUsers = filterCheckbox.checked
-    ? users.filter((user) => user.active)
+    ? users.filter((user) => user.estado === "Activo")
     : users;
 
   // Crear filas en la tabla
@@ -82,13 +32,13 @@ function renderUsers() {
 
     // Nombre del usuario
     const nameCell = document.createElement("td");
-    nameCell.textContent = user.name;
+    nameCell.textContent = user.nombre;
     row.appendChild(nameCell);
 
     // Estado del usuario (activo/inactivo)
     const statusCell = document.createElement("td");
-    statusCell.textContent = user.active ? "Activo" : "Inactivo";
-    statusCell.className = user.active ? "active" : "inactive";
+    statusCell.textContent = user.estado;
+    statusCell.className = user.estado === "Activo" ? "active" : "inactive";
     row.appendChild(statusCell);
 
     // Agregar fila a la tabla
@@ -97,7 +47,7 @@ function renderUsers() {
 }
 
 // Escuchar cambios en el checkbox
-filterCheckbox.addEventListener("change", renderUsers);
+filterCheckbox.addEventListener("change", () => loadUsers());
 
-// Renderizar usuarios inicialmente
-renderUsers();
+// Cargar y renderizar usuarios inicialmente
+loadUsers();
